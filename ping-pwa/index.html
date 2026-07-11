@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Ping — Never forget what mattered</title>
+<meta name="theme-color" content="#1C1C1E" />
+<meta name="description" content="Capture a thought in under 5 seconds. Ping turns what you say into a task, instantly." />
+<link rel="manifest" href="manifest.json" />
+<link rel="apple-touch-icon" href="icons/icon-192.png" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="apple-mobile-web-app-title" content="Ping" />
+<style>
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body { margin: 0; padding: 0; height: 100%; background: #FAFAFB; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif;
+    color: #1C1C1E;
+  }
+  #root {
+    max-width: 460px;
+    margin: 0 auto;
+    height: 100vh;
+    height: 100dvh;
+    background: #FAFAFB;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  input, button { font-family: inherit; }
+  input::placeholder { color: #AEAEB2; }
+  ::-webkit-scrollbar { display: none; }
+  @keyframes blink { 0%, 100% { opacity: 0.3; } 50% { opacity: 1; } }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="app.js"></script>
+</body>
+</html>
